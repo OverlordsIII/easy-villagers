@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "easy-villagers-fabric",
+  "version": "${version}",
+  "name": "Easy Villagers Fabric",
+  "description": "A port of the Easy Villagers Mod for fabric",
+  "authors": [
+    "Max Henkel",
+    "OverlordsIII"
+  ],
+  "contact": {
+    "sources": "https://github.com/OverlordsIII/easy-villagers"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/easy-villagers-fabric/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.overlordsiii.easyvillagers.EasyVillagers"
+    ],
+    "client": [
+      "io.github.overlordsiii.easyvillagers.EasyVillagersClient"
+    ]
+  },
+  "mixins": [
+    "easy-villagers-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.3+build.211",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
